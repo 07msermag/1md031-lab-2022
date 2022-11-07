@@ -1,1 +1,106 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>Page title shown in window title</title>
+       <meta charset="utf-8"/>
+   </head>
+   <body>
+   <header>
+    <h1>Välkommen till BurgerOnline</h1>
+    </header>
+    <nav> Menu items </nav>
+   <main>
+      <section>
+      <h1> Burger selection</h1>
+      <div style="display: inline-block";>
+      <h1>Oxburgare</h1>
+      <p>
+      <img src="https://imageproxy.wolt.com/menu/menu-images/5f8012022b0d9c9eda6a2e65/fb80990e-21d1-11ec-a702-de3e1444ebfb_cheese_burger.jpeg" alt="Ox" title = "Ox" style ="width: 200px" height = "200";>
+      </p>
+      <ul>
+    <li>Veganfri</li>
+    <li>100% Söggel</li>
+    <li>Glutenfri</li>
+</ul>
+      </div>
+      <div style="display: inline-block";>
+      <h1>Ostburgare</h1>
+      <p>
+      <img src = "https://s23209.pcdn.co/wp-content/uploads/2022/07/220602_DD_The-Best-Ever-Cheeseburger_267-1200x1200-cropped.jpg" alt= "ost" title = "ost" style = "width: 200px";>
+      </p>
+
+      <ul>
+    <li>Laktos</li>
+    <li>Lök</li>
+    <li>Gluten</li>
+</ul>
+    </div>
+    <div style="display: inline-block"; padding: 5px;>
+    
+      
+      <h1>Diverseburgare</h1>
+      <p>
+      <img src = "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photos/d5e92442-6aa8-4e0e-ba11-02df8c201503-retina-large.jpg" alt="diverse" title = "diverse" style= "width: 200px";>
+      </p>
+      
+      <ul>
+    <li>Köttmängd okänt</li>
+    <li>Innehåller alkohol</li>
+    <li>Legaliteten kontrollerad</li>
+</ul>
+</div>
+
+      </section>
+      <section id="contact">
+         <h1>Customer information</h1>
+         <form>
+         <p>
+    <label for="firstname">Full name</label><br>
+    <input type="text" id="firstname" name="fn" required="required" placeholder="First- and Last name">
+</p>
+<p>
+    <label for ="E-mail">E-mail</label><br>
+    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+</p>
+<p>
+<label for = "Street">Street</label><br>
+<input type = "text" id ="street" name ="st" required = "required" placeholder="Street Name">
+</p>
+<p>
+<label for = "House">House</label><br>
+<input type = "number" id ="house" name ="hs" required = "required" placeholder="House number">
+</p>
+<p>
+   <label for="payment">Payment methods</label><br>
+   <select id="payment" name="gibs">
+       <option>Credit Card</option>
+       <option>Cash by mail</option>
+       <option>Swish</option>
+       <option selected = "selected">Bitcoin</option>
+       <option>Invoice</option>
+   </select>
+   </p>
+   <p>
+   <label for = "gender"> Select Gender </label><br>
+<input type="radio" id="man" name="gender" value="m" checked>
+<label for="man">Man</label><br>
+<input type="radio" id="woman" name="gender" value="w">
+<label for="woman">Woman</label><br>
+<input type="radio" id="javascript" name="gender" value="no">
+<label for="not telling">Do not wish to tell</label> 
+</p>
+         
+         </form>
+
+      </section>
+      <button type="submit">
+  <img src="https://image.shutterstock.com/image-vector/green-shiny-button-metallic-elements-260nw-125207996.jpg">
+  Send Info
+</button>
+   </main>
+   <hr>
+   <footer>
+      End notes
+   </footer>
+   </body>
+</html>
