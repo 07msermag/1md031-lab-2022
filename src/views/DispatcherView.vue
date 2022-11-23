@@ -2,14 +2,19 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          Order#{{ key }}:
+          <div id="orderinfo" v-for="(burgeramount, burgername) in order.orderItems" v-bind:key="'order'+key+burgername">
+          {{burgeramount}} {{burgername}} </div>
+          <div id="orderinfo2"><i>{{order.details.firstname}}</i><i>({{order.details.email}}</i>,<i>{{order.details.payment}}</i>,<i> {{order.details.gender}}</i>)</div>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
       <div id="dots" v-bind:style="{ background: 'url(' + require('../../public/img/polacks.jpg')+ ')' }">
-          <div v-for="(order, key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
-            {{ key }}
+          <div v-for="(order,key) in orders" v-bind:style="{ left: order.details.x + 'px', top: order.details.y + 'px'}" v-bind:key="'dots' + key">
+            {{ key}}
           </div>
+          
+          
       </div>
     </div>
   </template>
@@ -21,7 +26,8 @@
     name: 'DispatcherView',
     data: function () {
       return {
-        orders: null
+        orders:null,
+  
       }
     },
     created: function () {
@@ -64,5 +70,26 @@
     height:20px;
     text-align: center;
   }
+
+  #orderinfo{
+    margin:10px;
+    align-items:center;
+    flex-direction: row;
+    display: inline-block;
+    
+
+
+  }
+
+  #orderinfo2{
+    margin:5px;
+    margin-left:0px;
+    border-bottom: 2px solid black;
+
+  }
+
+
+
+  
   </style>
   

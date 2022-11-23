@@ -1,0 +1,29 @@
+[
+    {
+      "name": "Oxburgare",
+      "kCal": 500,
+      "lactose": true,
+      "gluten": false,
+      "img": "https://imageproxy.wolt.com/menu/menu-images/5f8012022b0d9c9eda6a2e65/fb80990e-21d1-11ec-a702-de3e1444ebfb_cheese_burger.jpeg"
+    },
+
+
+
+    {
+      "name": "Ostburgare",
+      "kCal": 850,
+      "lactose": false,
+      "gluten": true,
+      "img": "https://s23209.pcdn.co/wp-content/uploads/2022/07/220602_DD_The-Best-Ever-Cheeseburger_267-1200x1200-cropped.jpg"
+    },
+
+
+
+    {
+      "name": "Diverseburgare",
+      "kCal": 700,
+      "lactose": true,
+      "gluten": true,
+      "img": "https://img.cdn4dd.com/p/fit=cover,width=1200,height=1200,format=auto,quality=50/media/photos/d5e92442-6aa8-4e0e-ba11-02df8c201503-retina-large.jpg"
+    }
+  ]
